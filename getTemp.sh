@@ -9,7 +9,7 @@ while [ -z $temp ]; do
 done
 
 if [ $loopCount -gt 3 ]; then 
-   logger -p local0.notice -t FREEZER-MON "Get temp for $1 took $loopCount loops"
+   logger -p local0.notice -t GET-TEMP "Get temp for $1 took $loopCount loops. Result was $temp"
 fi
 
 echo "$temp"
